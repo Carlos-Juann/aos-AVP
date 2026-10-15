@@ -46,10 +46,10 @@ replace "$MEDIALIB/src/com/archos/mediaprovider/ArchosMediaCommon.java" 'com.arc
 # 4) sharedUserId: apps con el mismo valor deben tener la misma firma; la nuestra se firma con otra clave
 replace "$VIDEO/AndroidManifest.xml" 'android:sharedUserId="archos.openmediacenter"' 'android:sharedUserId="archos.openmediacenter.smbfix"'
 
-# 4b) logs: smbj en DEBUG en el log por defecto (Android/data/<paquete>/files/logback/debug.log)
+# 4b) logs: smbj en DEBUG en el log por defecto (Android/data/<paquete>/files/logback/nova.log)
 replace "$VIDEO/res/raw/logback_full.xml" '<logger name="com.archos.filecorelibrary.smbj" level="INFO"/>' '<logger name="com.archos.filecorelibrary.smbj" level="DEBUG"/>'
 replace "$VIDEO/res/raw/logback_full.xml" '<logger name="com.hierynomus.smbj" level="INFO"/>' '<logger name="com.hierynomus.smbj" level="DEBUG"/>'
-replace "$VIDEO/res/raw/logback_full.xml" '<appender-ref ref="logcat"/>' '<appender-ref ref="logcat"/><appender-ref ref="LOG_FILE"/>' # sin esto nova.log no recibe nada
+replace "$VIDEO/res/raw/logback_full.xml" '<root level="INFO">' '<root level="INFO" ><appender-ref ref="LOG_FILE"/>' # sin esto nova.log no recibe nada
 
 # 5) firma: el build de release solo firma si existe keystore.properties
 cat > "$VIDEO/keystore.properties" <<EOF
