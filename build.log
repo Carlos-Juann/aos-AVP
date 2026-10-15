@@ -1,0 +1,2416 @@
+Downloading https://services.gradle.org/distributions/gradle-9.5.0-all.zip
+......................10%.......................20%.......................30%.......................40%.......................50%.......................60%.......................70%.......................80%.......................90%.......................100%
+
+Welcome to Gradle 9.5.0!
+
+Here are the highlights of this release:
+ - Task provenance in reports and failure messages
+ - Type-safe accessors for precompiled Kotlin Settings plugins
+
+For more details see https://docs.gradle.org/9.5.0/release-notes.html
+
+Starting a Gradle Daemon (subsequent builds will be faster)
+
+> Configure project :
+defaultConfig archivesBaseName : org.courville.nova.smbfix-2672629-6.5.5-20261015.2231
+defaultConfig versionName : 6.5.5-20261015.2231
+defaultConfig versionCode : 2672629
+buildTypes archivesBaseName : BuildType$AgpDecorated_Decorated{name=archivesNameValue, debuggable=false, testCoverageEnabled=false, jniDebuggable=false, pseudoLocalesEnabled=false, renderscriptDebuggable=false, renderscriptOptimLevel=3, minifyEnabled=false, zipAlignEnabled=true, signingConfig=null, embedMicroApp=false, mBuildConfigFields={}, mResValues={}, mProguardFiles=[], mConsumerProguardFiles=[], mManifestPlaceholders={}}
+
+> Task :preBuild UP-TO-DATE
+> Task :preNoamazonReleaseBuild UP-TO-DATE
+
+> Task :FileCoreLibrary:ndkBuild
+android_sdk is /usr/local/lib/android/sdk
+android_ndk is /usr/local/lib/android/sdk/ndk/30.0.16248370
+android_cmake is /usr/local/lib/android/sdk/cmake/4.1.2
+make[1]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/libnativehelper'
+Android NDK: WARNING: APP_PLATFORM android-21 is higher than android:minSdkVersion 1 in ./AndroidManifest.xml. NDK binaries will *not* be compatible with devices older than android-21. See https://developer.android.com/ndk/guides/common-problems for more information.    
+make[1]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/libnativehelper'
+make[1]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/libnativehelper'
+[armeabi-v7a] Compile++ thumb: nvpnativehelper <= JniConstants.cpp
+make[1]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/libnativehelper'
+make[1]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/libnativehelper'
+[riscv64] Compile++      : nvpnativehelper <= JniConstants.cpp
+make[1]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/libnativehelper'
+make[1]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/libnativehelper'
+[arm64-v8a] Compile++      : nvpnativehelper <= JniConstants.cpp
+make[1]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/libnativehelper'
+make[1]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/libnativehelper'
+[x86_64] Compile++      : nvpnativehelper <= JniConstants.cpp
+make[1]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/libnativehelper'
+make[1]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/libnativehelper'
+[x86] Compile++      : nvpnativehelper <= JniConstants.cpp
+make[1]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/libnativehelper'
+make[1]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/libnativehelper'
+[armeabi-v7a] Compile++ thumb: nvpnativehelper <= JNIHelp.cpp
+make[1]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/libnativehelper'
+make[1]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/libnativehelper'
+[x86_64] Compile++      : nvpnativehelper <= JNIHelp.cpp
+make[1]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/libnativehelper'
+make[1]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/libnativehelper'
+[arm64-v8a] Compile++      : nvpnativehelper <= JNIHelp.cpp
+make[1]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/libnativehelper'
+make[1]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/libnativehelper'
+[riscv64] Compile++      : nvpnativehelper <= JNIHelp.cpp
+make[1]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/libnativehelper'
+make[1]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/libnativehelper'
+[x86] Compile++      : nvpnativehelper <= JNIHelp.cpp
+make[1]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/libnativehelper'
+make[1]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/libnativehelper'
+[armeabi-v7a] Compile++ thumb: nvpnativehelper <= toStringArray.cpp
+make[1]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/libnativehelper'
+make[1]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/libnativehelper'
+[x86_64] Compile++      : nvpnativehelper <= toStringArray.cpp
+make[1]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/libnativehelper'
+make[1]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/libnativehelper'
+[arm64-v8a] Compile++      : nvpnativehelper <= toStringArray.cpp
+make[1]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/libnativehelper'
+make[1]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/libnativehelper'
+[riscv64] Compile++      : nvpnativehelper <= toStringArray.cpp
+make[1]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/libnativehelper'
+make[1]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/libnativehelper'
+[x86] Compile++      : nvpnativehelper <= toStringArray.cpp
+make[1]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/libnativehelper'
+make[1]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/libnativehelper'
+[armeabi-v7a] SharedLibrary  : libnvpnativehelper.so
+make[1]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/libnativehelper'
+make[1]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/libnativehelper'
+[x86] SharedLibrary  : libnvpnativehelper.so
+make[1]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/libnativehelper'
+make[1]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/libnativehelper'
+[arm64-v8a] SharedLibrary  : libnvpnativehelper.so
+make[1]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/libnativehelper'
+make[1]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/libnativehelper'
+[riscv64] SharedLibrary  : libnvpnativehelper.so
+make[1]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/libnativehelper'
+make[1]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/libnativehelper'
+[x86_64] SharedLibrary  : libnvpnativehelper.so
+make[1]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/libnativehelper'
+make[1]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/libnativehelper'
+[armeabi-v7a] Install        : libnvpnativehelper.so => libs/armeabi-v7a/libnvpnativehelper.so
+make[1]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/libnativehelper'
+make[1]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/libnativehelper'
+[arm64-v8a] Install        : libnvpnativehelper.so => libs/arm64-v8a/libnvpnativehelper.so
+make[1]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/libnativehelper'
+make[1]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/libnativehelper'
+[riscv64] Install        : libnvpnativehelper.so => libs/riscv64/libnvpnativehelper.so
+make[1]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/libnativehelper'
+make[1]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/libnativehelper'
+[x86_64] Install        : libnvpnativehelper.so => libs/x86_64/libnvpnativehelper.so
+make[1]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/libnativehelper'
+make[1]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/libnativehelper'
+[x86] Install        : libnvpnativehelper.so => libs/x86/libnvpnativehelper.so
+make[1]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/libnativehelper'
+jni/utils/Android.mk:35: libfilecorelibrary local module: libfilecoreutils
+make[1]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/FileCoreLibrary'
+jni/utils/Android.mk:36: libfilecorelibrary target_out: ./obj/local/armeabi-v7a
+Android NDK: WARNING: APP_PLATFORM android-21 is higher than android:minSdkVersion 1 in ./AndroidManifest.xml. NDK binaries will *not* be compatible with devices older than android-21. See https://developer.android.com/ndk/guides/common-problems for more information.    
+jni/utils/Android.mk:37: libfilecorelibrary local_ldlibs: -L./obj/local/armeabi-v7a -llog
+make[1]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/FileCoreLibrary'
+jni/utils/Android.mk:38: libfilecorelibrary local_cflags: -DCONFIG_ARM
+jni/utils/Android.mk:39: libfilecorelibrary local_shared_libraries: libnvpnativehelper
+jni/utils/Android.mk:40: libfilecorelibrary build_android_libs: 
+jni/utils/Android.mk:41: libfilecorelibrary build_shared_library: /usr/local/lib/android/sdk/ndk/30.0.16248370/build/core/build-shared-library.mk
+jni/utils/Android.mk:35: libfilecorelibrary local module: libfilecoreutils
+jni/utils/Android.mk:36: libfilecorelibrary target_out: ./obj/local/x86
+jni/utils/Android.mk:37: libfilecorelibrary local_ldlibs: -L./obj/local/x86 -llog
+jni/utils/Android.mk:38: libfilecorelibrary local_cflags: 
+jni/utils/Android.mk:39: libfilecorelibrary local_shared_libraries: libnvpnativehelper
+jni/utils/Android.mk:40: libfilecorelibrary build_android_libs: 
+jni/utils/Android.mk:41: libfilecorelibrary build_shared_library: /usr/local/lib/android/sdk/ndk/30.0.16248370/build/core/build-shared-library.mk
+jni/utils/Android.mk:35: libfilecorelibrary local module: libfilecoreutils
+jni/utils/Android.mk:36: libfilecorelibrary target_out: ./obj/local/arm64-v8a
+jni/utils/Android.mk:37: libfilecorelibrary local_ldlibs: -L./obj/local/arm64-v8a -llog
+jni/utils/Android.mk:38: libfilecorelibrary local_cflags: 
+jni/utils/Android.mk:39: libfilecorelibrary local_shared_libraries: libnvpnativehelper
+jni/utils/Android.mk:40: libfilecorelibrary build_android_libs: 
+jni/utils/Android.mk:41: libfilecorelibrary build_shared_library: /usr/local/lib/android/sdk/ndk/30.0.16248370/build/core/build-shared-library.mk
+jni/utils/Android.mk:35: libfilecorelibrary local module: libfilecoreutils
+jni/utils/Android.mk:36: libfilecorelibrary target_out: ./obj/local/x86_64
+jni/utils/Android.mk:37: libfilecorelibrary local_ldlibs: -L./obj/local/x86_64 -llog
+jni/utils/Android.mk:38: libfilecorelibrary local_cflags: 
+jni/utils/Android.mk:39: libfilecorelibrary local_shared_libraries: libnvpnativehelper
+jni/utils/Android.mk:40: libfilecorelibrary build_android_libs: 
+jni/utils/Android.mk:41: libfilecorelibrary build_shared_library: /usr/local/lib/android/sdk/ndk/30.0.16248370/build/core/build-shared-library.mk
+make[1]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/FileCoreLibrary'
+[armeabi-v7a] Prebuilt       : libnvpnativehelper.so <= jni/utils/../../../native/libnativehelper/obj/local/armeabi-v7a/
+make[1]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/FileCoreLibrary'
+make[1]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/FileCoreLibrary'
+[x86] Prebuilt       : libnvpnativehelper.so <= jni/utils/../../../native/libnativehelper/obj/local/x86/
+make[1]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/FileCoreLibrary'
+make[1]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/FileCoreLibrary'
+[arm64-v8a] Prebuilt       : libnvpnativehelper.so <= jni/utils/../../../native/libnativehelper/obj/local/arm64-v8a/
+make[1]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/FileCoreLibrary'
+make[1]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/FileCoreLibrary'
+[armeabi-v7a] Compile++ arm  : filecoreutils <= filecoreutils.cpp
+make[1]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/FileCoreLibrary'
+make[1]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/FileCoreLibrary'
+[arm64-v8a] Compile++      : filecoreutils <= filecoreutils.cpp
+make[1]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/FileCoreLibrary'
+make[1]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/FileCoreLibrary'
+[x86_64] Prebuilt       : libnvpnativehelper.so <= jni/utils/../../../native/libnativehelper/obj/local/x86_64/
+make[1]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/FileCoreLibrary'
+make[1]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/FileCoreLibrary'
+[x86] Compile++      : filecoreutils <= filecoreutils.cpp
+make[1]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/FileCoreLibrary'
+make[1]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/FileCoreLibrary'
+[x86] Install        : libnvpnativehelper.so => libs/x86/libnvpnativehelper.so
+make[1]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/FileCoreLibrary'
+make[1]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/FileCoreLibrary'
+[armeabi-v7a] Install        : libnvpnativehelper.so => libs/armeabi-v7a/libnvpnativehelper.so
+make[1]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/FileCoreLibrary'
+make[1]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/FileCoreLibrary'
+[arm64-v8a] Install        : libnvpnativehelper.so => libs/arm64-v8a/libnvpnativehelper.so
+make[1]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/FileCoreLibrary'
+make[1]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/FileCoreLibrary'
+[x86_64] Install        : libnvpnativehelper.so => libs/x86_64/libnvpnativehelper.so
+make[1]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/FileCoreLibrary'
+make[1]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/FileCoreLibrary'
+[x86_64] Compile++      : filecoreutils <= filecoreutils.cpp
+make[1]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/FileCoreLibrary'
+make[1]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/FileCoreLibrary'
+[armeabi-v7a] Compile arm    : filecoreutils <= sendfile64.S
+make[1]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/FileCoreLibrary'
+make[1]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/FileCoreLibrary'
+[x86] Compile        : filecoreutils <= JNIPing.c
+make[1]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/FileCoreLibrary'
+make[1]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/FileCoreLibrary'
+[x86_64] Compile        : filecoreutils <= JNIPing.c
+make[1]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/FileCoreLibrary'
+make[1]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/FileCoreLibrary'
+[armeabi-v7a] Compile arm    : filecoreutils <= JNIPing.c
+make[1]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/FileCoreLibrary'
+make[1]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/FileCoreLibrary'
+[arm64-v8a] Compile        : filecoreutils <= JNIPing.c
+make[1]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/FileCoreLibrary'
+make[1]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/FileCoreLibrary'
+[x86] Compile        : filecoreutils <= pingttl2.c
+make[1]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/FileCoreLibrary'
+make[1]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/FileCoreLibrary'
+[x86_64] Compile        : filecoreutils <= pingttl2.c
+make[1]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/FileCoreLibrary'
+make[1]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/FileCoreLibrary'
+[armeabi-v7a] Compile arm    : filecoreutils <= pingttl2.c
+make[1]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/FileCoreLibrary'
+make[1]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/FileCoreLibrary'
+[arm64-v8a] Compile        : filecoreutils <= pingttl2.c
+make[1]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/FileCoreLibrary'
+make[1]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/FileCoreLibrary'
+[x86_64] SharedLibrary  : libfilecoreutils.so
+make[1]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/FileCoreLibrary'
+make[1]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/FileCoreLibrary'
+[arm64-v8a] SharedLibrary  : libfilecoreutils.so
+make[1]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/FileCoreLibrary'
+make[1]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/FileCoreLibrary'
+[armeabi-v7a] SharedLibrary  : libfilecoreutils.so
+make[1]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/FileCoreLibrary'
+make[1]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/FileCoreLibrary'
+[x86] SharedLibrary  : libfilecoreutils.so
+make[1]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/FileCoreLibrary'
+make[1]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/FileCoreLibrary'
+[arm64-v8a] Install        : libfilecoreutils.so => libs/arm64-v8a/libfilecoreutils.so
+make[1]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/FileCoreLibrary'
+make[1]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/FileCoreLibrary'
+[x86_64] Install        : libfilecoreutils.so => libs/x86_64/libfilecoreutils.so
+make[1]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/FileCoreLibrary'
+make[1]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/FileCoreLibrary'
+[armeabi-v7a] Install        : libfilecoreutils.so => libs/armeabi-v7a/libfilecoreutils.so
+make[1]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/FileCoreLibrary'
+make[1]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/FileCoreLibrary'
+[x86] Install        : libfilecoreutils.so => libs/x86/libfilecoreutils.so
+make[1]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/FileCoreLibrary'
+
+> Task :FileCoreLibrary:preBuild
+> Task :FileCoreLibrary:preReleaseBuild
+> Task :FileCoreLibrary:compileReleaseAidl NO-SOURCE
+
+> Task :MediaLib:ndkBuild
+android_sdk is /usr/local/lib/android/sdk
+android_ndk is /usr/local/lib/android/sdk/ndk/30.0.16248370
+android_cmake is /usr/local/lib/android/sdk/cmake/4.1.2
+make[1]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/libnativehelper'
+Android NDK: WARNING: APP_PLATFORM android-21 is higher than android:minSdkVersion 1 in ./AndroidManifest.xml. NDK binaries will *not* be compatible with devices older than android-21. See https://developer.android.com/ndk/guides/common-problems for more information.    
+make[1]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/libnativehelper'
+make[1]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/libnativehelper'
+[arm64-v8a] Install        : libnvpnativehelper.so => libs/arm64-v8a/libnvpnativehelper.so
+make[1]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/libnativehelper'
+make[1]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/libnativehelper'
+[riscv64] Install        : libnvpnativehelper.so => libs/riscv64/libnvpnativehelper.so
+make[1]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/libnativehelper'
+make[1]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/libnativehelper'
+[x86_64] Install        : libnvpnativehelper.so => libs/x86_64/libnvpnativehelper.so
+make[1]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/libnativehelper'
+make[1]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/libnativehelper'
+[armeabi-v7a] Install        : libnvpnativehelper.so => libs/armeabi-v7a/libnvpnativehelper.so
+make[1]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/libnativehelper'
+make[1]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/libnativehelper'
+[x86] Install        : libnvpnativehelper.so => libs/x86/libnvpnativehelper.so
+make[1]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/libnativehelper'
+cd native/dav1d-android-builder; REPO_TOP_DIR=/home/runner/work/aos-AVP/aos-AVP/nova bash bootstrap_avp_dav1d.sh
+NDK_PATH is /usr/local/lib/android/sdk/ndk/30.0.16248370
+CMAKE_PATH is /usr/local/lib/android/sdk/cmake/4.1.2
+PREBUILT_PATH is /usr/local/lib/android/sdk/ndk/30.0.16248370/prebuilt/linux-x86_64
+LLVM_PATH is /usr/local/lib/android/sdk/ndk/30.0.16248370/toolchains/llvm/prebuilt/linux-x86_64
+Generating toolchain description...
+Already built for armeabi-v7a
+NDK_PATH is /usr/local/lib/android/sdk/ndk/30.0.16248370
+CMAKE_PATH is /usr/local/lib/android/sdk/cmake/4.1.2
+PREBUILT_PATH is /usr/local/lib/android/sdk/ndk/30.0.16248370/prebuilt/linux-x86_64
+LLVM_PATH is /usr/local/lib/android/sdk/ndk/30.0.16248370/toolchains/llvm/prebuilt/linux-x86_64
+Generating toolchain description...
+Already built for arm64-v8a
+NDK_PATH is /usr/local/lib/android/sdk/ndk/30.0.16248370
+CMAKE_PATH is /usr/local/lib/android/sdk/cmake/4.1.2
+PREBUILT_PATH is /usr/local/lib/android/sdk/ndk/30.0.16248370/prebuilt/linux-x86_64
+LLVM_PATH is /usr/local/lib/android/sdk/ndk/30.0.16248370/toolchains/llvm/prebuilt/linux-x86_64
+Generating toolchain description...
+Already built for x86
+NDK_PATH is /usr/local/lib/android/sdk/ndk/30.0.16248370
+CMAKE_PATH is /usr/local/lib/android/sdk/cmake/4.1.2
+PREBUILT_PATH is /usr/local/lib/android/sdk/ndk/30.0.16248370/prebuilt/linux-x86_64
+LLVM_PATH is /usr/local/lib/android/sdk/ndk/30.0.16248370/toolchains/llvm/prebuilt/linux-x86_64
+Generating toolchain description...
+Already built for x86_64
+cd native/opus-android-builder; REPO_TOP_DIR=/home/runner/work/aos-AVP/aos-AVP/nova bash build.sh
+NDK_PATH is /usr/local/lib/android/sdk/ndk/30.0.16248370
+CMAKE_PATH is /usr/local/lib/android/sdk/cmake/4.1.2
+PREBUILT_PATH is /usr/local/lib/android/sdk/ndk/30.0.16248370/prebuilt/linux-x86_64
+LLVM_PATH is /usr/local/lib/android/sdk/ndk/30.0.16248370/toolchains/llvm/prebuilt/linux-x86_64
+Cloning into 'opus'...
+Note: switching to '03647f524a40b05a1898522e92033810b58103c7'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+
+  git switch -c <new-branch-name>
+
+Or undo this operation with:
+
+  git switch -
+
+Turn off this advice by setting config variable advice.detachedHead to false
+
+HEAD is now at 03647f52 Preventing LPC instability with low periodic noise
+patching file CMakeLists.txt
+Already built for armeabi-v7a
+Already built for arm64-v8a
+Already built for x86
+Already built for x86_64
+cd native/openssl-android-builder; REPO_TOP_DIR=/home/runner/work/aos-AVP/aos-AVP/nova bash bootstrap.sh
+NDK_PATH is /usr/local/lib/android/sdk/ndk/30.0.16248370
+CMAKE_PATH is /usr/local/lib/android/sdk/cmake/4.1.2
+PREBUILT_PATH is /usr/local/lib/android/sdk/ndk/30.0.16248370/prebuilt/linux-x86_64
+LLVM_PATH is /usr/local/lib/android/sdk/ndk/30.0.16248370/toolchains/llvm/prebuilt/linux-x86_64
+All openssl prebuilt libs already exist, skipping
+cd native/libmysofa-android-builder; REPO_TOP_DIR=/home/runner/work/aos-AVP/aos-AVP/nova bash build.sh
+NDK_PATH is /usr/local/lib/android/sdk/ndk/30.0.16248370
+CMAKE_PATH is /usr/local/lib/android/sdk/cmake/4.1.2
+PREBUILT_PATH is /usr/local/lib/android/sdk/ndk/30.0.16248370/prebuilt/linux-x86_64
+LLVM_PATH is /usr/local/lib/android/sdk/ndk/30.0.16248370/toolchains/llvm/prebuilt/linux-x86_64
+All libmysofa prebuilt libs already exist, skipping
+cp: cannot stat 'libmysofa/src/hrtf/mysofa.h': No such file or directory
+cd native/ffmpeg-android-builder; REPO_TOP_DIR=/home/runner/work/aos-AVP/aos-AVP/nova bash bootstrap_avp_ffmpeg.sh
+NDK_PATH is /usr/local/lib/android/sdk/ndk/30.0.16248370
+CMAKE_PATH is /usr/local/lib/android/sdk/cmake/4.1.2
+PREBUILT_PATH is /usr/local/lib/android/sdk/ndk/30.0.16248370/prebuilt/linux-x86_64
+LLVM_PATH is /usr/local/lib/android/sdk/ndk/30.0.16248370/toolchains/llvm/prebuilt/linux-x86_64
+All ffmpeg prebuilt libs already exist, skipping
+MAKE_JOBS= BUILD=DEBUG  NDK_APP_ABI="armeabi-v7a x86 arm64-v8a x86_64" LIBAV_CONFIG=full make native_build_native/avos
+make[1]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova'
+android_sdk is /usr/local/lib/android/sdk
+android_ndk is /usr/local/lib/android/sdk/ndk/30.0.16248370
+android_cmake is /usr/local/lib/android/sdk/cmake/4.1.2
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+/usr/local/lib/android/sdk/ndk/30.0.16248370/build/core/build-binary.mk:590: Android NDK: Module avos depends on undefined modules: avcodec avutil avformat avfilter swscale swresample    
+Android NDK: WARNING:jni/Android.mk:avos: non-system libraries in linker flags: -laudiocompress -lavcodec -lavutil -lavformat -lavfilter -lswscale -lswresample -lsfdec -ldeinterlace -lavos_android    
+Android NDK:     This is likely to result in incorrect builds. Try using LOCAL_STATIC_LIBRARIES    
+Android NDK:     or LOCAL_SHARED_LIBRARIES instead to list the library dependencies of the    
+Android NDK:     current module    
+Android NDK: WARNING:jni/Android.mk:avos: non-system libraries in linker flags: -laudiocompress -lavcodec -lavutil -lavformat -lavfilter -lswscale -lswresample -lsfdec -ldeinterlace -lavos_android    
+Android NDK:     This is likely to result in incorrect builds. Try using LOCAL_STATIC_LIBRARIES    
+Android NDK:     or LOCAL_SHARED_LIBRARIES instead to list the library dependencies of the    
+/usr/local/lib/android/sdk/ndk/30.0.16248370/build/core/build-binary.mk:590: Android NDK: Module avos depends on undefined modules: avcodec avutil avformat avfilter swscale swresample    
+Android NDK:     current module    
+/usr/local/lib/android/sdk/ndk/30.0.16248370/build/core/build-binary.mk:590: Android NDK: Module avos depends on undefined modules: avcodec avutil avformat avfilter swscale swresample    
+Android NDK: WARNING:jni/Android.mk:avos: non-system libraries in linker flags: -laudiocompress -lavcodec -lavutil -lavformat -lavfilter -lswscale -lswresample -lsfdec -ldeinterlace -lavos_android    
+/usr/local/lib/android/sdk/ndk/30.0.16248370/build/core/build-binary.mk:590: Android NDK: Module avos depends on undefined modules: avcodec avutil avformat avfilter swscale swresample    
+Android NDK:     This is likely to result in incorrect builds. Try using LOCAL_STATIC_LIBRARIES    
+Android NDK:     or LOCAL_SHARED_LIBRARIES instead to list the library dependencies of the    
+Android NDK:     current module    
+Android NDK: WARNING:jni/Android.mk:avos: non-system libraries in linker flags: -laudiocompress -lavcodec -lavutil -lavformat -lavfilter -lswscale -lswresample -lsfdec -ldeinterlace -lavos_android    
+Android NDK:     This is likely to result in incorrect builds. Try using LOCAL_STATIC_LIBRARIES    
+Android NDK:     or LOCAL_SHARED_LIBRARIES instead to list the library dependencies of the    
+Android NDK:     current module    
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[armeabi-v7a] Prebuilt       : libnvpnativehelper.so <= jni/libavosjni/../../../libnativehelper/obj/local/armeabi-v7a/
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86] Prebuilt       : libnvpnativehelper.so <= jni/libavosjni/../../../libnativehelper/obj/local/x86/
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[arm64-v8a] Prebuilt       : libnvpnativehelper.so <= jni/libavosjni/../../../libnativehelper/obj/local/arm64-v8a/
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86_64] Prebuilt       : libnvpnativehelper.so <= jni/libavosjni/../../../libnativehelper/obj/local/x86_64/
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[armeabi-v7a] Compile thumb  : audiocompress <= compress.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[armeabi-v7a] Compile arm    : avos <= atime.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[armeabi-v7a] Compile arm    : avos <= bits.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[armeabi-v7a] Compile arm    : avos <= iso639.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[armeabi-v7a] Compile arm    : avos <= fb_dummy.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[armeabi-v7a] Compile arm    : avos <= athread.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[armeabi-v7a] Compile arm    : avos <= iso3166.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[armeabi-v7a] Compile arm    : avos <= cbe.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[armeabi-v7a] Compile arm    : avos <= awchar.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[armeabi-v7a] Compile arm    : avos <= bmp.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[armeabi-v7a] Compile arm    : avos <= av_dump.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[armeabi-v7a] Compile arm    : avos <= serial.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[armeabi-v7a] Compile arm    : avos <= rect.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[armeabi-v7a] Compile arm    : avos <= libavos.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[armeabi-v7a] Compile arm    : avos <= frame_q.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[armeabi-v7a] Compile arm    : avos <= image_resize.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[armeabi-v7a] Compile arm    : avos <= av.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[armeabi-v7a] Compile arm    : avos <= image.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[armeabi-v7a] Compile arm    : avos <= util.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[armeabi-v7a] Compile arm    : avos <= file_type.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[armeabi-v7a] Compile arm    : avos <= file.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[armeabi-v7a] Compile arm    : avos <= file_info.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[armeabi-v7a] Compile arm    : avos <= linked_list.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[armeabi-v7a] Compile arm    : avos <= sysfs_ll.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[armeabi-v7a] Compile arm    : avos <= mainloop.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[armeabi-v7a] Compile arm    : avos <= object.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[armeabi-v7a] Compile arm    : avos <= debug.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[armeabi-v7a] Compile arm    : avos <= thumb_storage.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[armeabi-v7a] Compile arm    : avos <= browse.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[armeabi-v7a] Compile arm    : avos <= avos_lifetime.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[armeabi-v7a] Compile arm    : avos <= threadcom.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[armeabi-v7a] Compile arm    : avos <= ac_av.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[armeabi-v7a] Compile arm    : avos <= timers.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[armeabi-v7a] Compile arm    : avos <= dataevent.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[armeabi-v7a] Compile arm    : avos <= pixel_utils.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[armeabi-v7a] Compile arm    : avos <= stream_oem.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[armeabi-v7a] Compile arm    : avos <= thumb_stream.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[armeabi-v7a] Compile arm    : avos <= device_config.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[armeabi-v7a] Compile arm    : avos <= xdm_utils.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[armeabi-v7a] Compile arm    : avos <= stream_buffer_cooked.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[armeabi-v7a] Compile arm    : avos <= stream_queue.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[armeabi-v7a] Compile arm    : avos <= stream_global.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[armeabi-v7a] Compile arm    : avos <= stream_buffer_raw.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[armeabi-v7a] Compile arm    : avos <= stream_dumper.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[armeabi-v7a] Compile arm    : avos <= stream_alloc.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[armeabi-v7a] Compile arm    : avos <= mpg4.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[armeabi-v7a] Compile arm    : avos <= stream_buffer.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[armeabi-v7a] Compile arm    : avos <= mpeg2.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[armeabi-v7a] Compile arm    : avos <= realvideo.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[armeabi-v7a] Compile arm    : avos <= wmv.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[armeabi-v7a] Compile arm    : avos <= pts_reorder.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[armeabi-v7a] Compile arm    : avos <= stream_config.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[armeabi-v7a] Compile arm    : avos <= downmix.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[armeabi-v7a] Compile arm    : avos <= hevc.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[armeabi-v7a] Compile arm    : avos <= dts.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[armeabi-v7a] Compile arm    : avos <= stream.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[armeabi-v7a] Compile arm    : avos <= h264.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[armeabi-v7a] Compile arm    : avos <= codec_yuv.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[armeabi-v7a] Compile arm    : avos <= stream_io_fd.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[armeabi-v7a] Compile arm    : avos <= stream_io_file.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[armeabi-v7a] Compile arm    : avos <= i18n.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[armeabi-v7a] Compile arm    : avos <= codec_textsub.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[armeabi-v7a] Compile arm    : avos <= codec_ssa.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[armeabi-v7a] Compile arm    : avos <= codec_vobsub.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[armeabi-v7a] Compile arm    : avos <= stream_parser.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[armeabi-v7a] Compile arm    : avos <= vobsub.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[armeabi-v7a] Compile arm    : avos <= OMX_utils.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[armeabi-v7a] Compile arm    : avos <= codec_ffsub.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[armeabi-v7a] Compile arm    : avos <= codec_utils.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[armeabi-v7a] Compile arm    : avos <= codec_lavc_async.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[armeabi-v7a] Compile arm    : avos <= stream_sink_audio.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[armeabi-v7a] Compile arm    : avos <= codec_sfdec.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[armeabi-v7a] Compile arm    : avos <= stream_sink_video.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[armeabi-v7a] Compile arm    : avos <= codec_ffmpeg_audio.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[armeabi-v7a] Compile arm    : avos <= codec_ffmpeg_video.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[armeabi-v7a] Compile arm    : avos <= stream_sync.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[armeabi-v7a] Compile arm    : avos <= stream_sink_video_fake.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[armeabi-v7a] Compile arm    : avos <= stream_sink_video_sim2.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[armeabi-v7a] Compile arm    : avos <= codec_mediacodec_audio.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[armeabi-v7a] Compile arm    : avos <= stream_sink_audio_fake.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[armeabi-v7a] Compile arm    : avos <= stream_resizer_dss.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[armeabi-v7a] Compile arm    : avos <= codec_OMX.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[armeabi-v7a] Compile arm    : avos <= stream_subtitle.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[armeabi-v7a] Compile arm    : avos <= stream_sink_video_android2.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[armeabi-v7a] Compile arm    : avos <= stream_sub_ext.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[armeabi-v7a] Compile arm    : avos <= stream_parser_ffmpeg.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[armeabi-v7a] Compile arm    : avos <= stream_audio.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[armeabi-v7a] Compile arm    : avos <= subtitle_vtt.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[armeabi-v7a] Compile arm    : avos <= subtitle_ssa.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[armeabi-v7a] Compile arm    : avos <= subtitle_formats.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[armeabi-v7a] Compile arm    : avos <= stream_sink_video_android3.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[armeabi-v7a] Compile arm    : avos <= stream_sink_video_android.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[armeabi-v7a] Compile arm    : avos <= subtitle_srt.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[armeabi-v7a] Compile arm    : avos <= mp3.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[armeabi-v7a] Compile arm    : avos <= subtitle_sub.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[armeabi-v7a] Compile arm    : avos <= id3tag.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[armeabi-v7a] Compile arm    : avos <= stream_filter_audio_jni.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[armeabi-v7a] Compile arm    : avos <= subtitle_mpl2.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[armeabi-v7a] Compile arm    : avos <= pcm_autogain.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[armeabi-v7a] Compile arm    : avos <= stream_filter_audio_compress.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[armeabi-v7a] Compile arm    : avos <= subtitle_smi.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[armeabi-v7a] Compile arm    : avos <= subtitle_idx.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[armeabi-v7a] Compile arm    : avos <= avos_common.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[armeabi-v7a] Compile arm    : avos <= avos_mp_audio.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[armeabi-v7a] Compile arm    : avos <= log_android.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[armeabi-v7a] Compile arm    : avos <= stream_filter_audio_sonic.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[armeabi-v7a] Compile arm    : avos <= android_config.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[armeabi-v7a] Compile arm    : avos <= avos_mp_video.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[armeabi-v7a] Compile arm    : avos <= audio_interface.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[armeabi-v7a] Compile arm    : avos <= android_codecs.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[armeabi-v7a] Compile arm    : avos <= avos_mr.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[armeabi-v7a] Compile arm    : avos <= audio_interface_null.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[armeabi-v7a] Compile arm    : avos <= stream_filter_audio_ac3.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[armeabi-v7a] Compile arm    : avos <= stream_filter_audio_atempo.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[armeabi-v7a] Compile arm    : avos <= stream_video.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[armeabi-v7a] Compile arm    : avos <= neon_memset.S
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[armeabi-v7a] Compile arm    : avos <= neon_memcpy.S
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[armeabi-v7a] Compile arm    : avos <= audio_interface_audiotrack_new.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[armeabi-v7a] Compile thumb  : sfdec <= dec_audio.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[armeabi-v7a] Compile arm    : avos <= audio_interface_audiotrack.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[armeabi-v7a] Compile arm    : deinterlace <= neon_deinterlace.S
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[armeabi-v7a] Compile thumb  : sfdec <= sfdec.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[armeabi-v7a] Compile thumb  : avos_android <= android_window.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[armeabi-v7a] Compile arm    : avos <= codec_sfdec2.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[armeabi-v7a] Compile arm    : avos <= audio_spdif.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[armeabi-v7a] Install        : libnvpnativehelper.so => libs/armeabi-v7a/libnvpnativehelper.so
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[armeabi-v7a] Compile thumb  : cputest <= cputest_jni.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[armeabi-v7a] Compile arm    : avos <= audio_interface_opensles.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[armeabi-v7a] Compile thumb  : avos_android <= android_buffer.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[armeabi-v7a] Compile thumb  : avosjni <= libavos.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[armeabi-v7a] Compile++ thumb: sfdec.core.21 <= sfdec_common.cpp
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[armeabi-v7a] Compile thumb  : cpufeatures <= cpu-features.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[armeabi-v7a] Compile arm    : avos <= sonic.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[armeabi-v7a] Compile arm    : deinterlace <= deinterlace.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+jni/../external/libdeinterlace/deinterlace.c:59:35: warning: passing 'uint8_t *' (aka 'unsigned char *') to parameter of type 'int8_t *' (aka 'signed char *') converts between pointers to integer types with different sign [-Wpointer-sign]
+   59 |             neon_XDeint8x8DetectC(src, i_src, &fr, &ff);
+      |                                   ^~~
+jni/../external/libdeinterlace/neon_deinterlace.h:6:36: note: passing argument to parameter 'src' here
+    6 | void neon_XDeint8x8DetectC(int8_t *src, int i_src, int *fr, int *ff);
+      |                                    ^
+jni/../external/libdeinterlace/deinterlace.c:176:20: warning: expression result unused [-Wunused-value]
+  175 |                    + abs(src1[4]-src2[6])
+      |                    ~~~~~~~~~~~~~~~~~~~~~~
+  176 |                    + abs(src1[5]-src2[7]);
+      |                    ^ ~~~~~~~~~~~~~~~~~~~~
+2 warnings generated.
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86] Compile        : avos <= atime.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[armeabi-v7a] Compile arm    : avos <= avos_mp.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86] Compile        : audiocompress <= compress.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[armeabi-v7a] Compile thumb  : avosjni <= avos_media_metadata_retriever.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[armeabi-v7a] Compile++ thumb: sfdec.core.21 <= sfdec_ndkmediacodec.cpp
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[armeabi-v7a] Compile++ thumb: sfdec.core.21 <= codec_audio_mediacodec.cpp
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86] Compile        : avos <= libavos.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86] Compile        : avos <= athread.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86] Compile        : avos <= bits.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86] Compile        : avos <= fb_dummy.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86] Compile        : avos <= cbe.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86] Compile        : avos <= iso3166.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86] Compile        : avos <= serial.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86] Compile        : avos <= iso639.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[armeabi-v7a] Compile thumb  : avosjni <= avos_media_player.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86] Compile        : avos <= awchar.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86] Compile        : avos <= bmp.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86] Compile        : avos <= av_dump.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86] Compile        : avos <= rect.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86] Compile        : avos <= debug.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86] Compile        : avos <= util.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86] Compile        : avos <= frame_q.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86] Compile        : avos <= image_resize.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86] Compile        : avos <= image.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86] Compile        : avos <= file_type.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86] Compile        : avos <= file.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86] Compile        : avos <= object.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86] Compile        : avos <= sysfs_ll.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86] Compile        : avos <= ac_av.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86] Compile        : avos <= av.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86] Compile        : avos <= mainloop.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86] Compile        : avos <= linked_list.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86] Compile        : avos <= file_info.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86] Compile        : avos <= thumb_stream.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86] Compile        : avos <= thumb_storage.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86] Compile        : avos <= threadcom.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86] Compile        : avos <= device_config.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86] Compile        : avos <= avos_lifetime.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86] Compile        : avos <= pixel_utils.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86] Compile        : avos <= dataevent.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86] Compile        : avos <= browse.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86] Compile        : avos <= timers.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86] Compile        : avos <= xdm_utils.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86] Compile        : avos <= stream_oem.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[armeabi-v7a] Compile arm    : avos <= audio_interface_audiotrack_java.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86] Compile        : avos <= stream_buffer_cooked.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86] Compile        : avos <= stream_global.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86] Compile        : avos <= stream_queue.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86] Compile        : avos <= stream_buffer_raw.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86] Compile        : avos <= stream_dumper.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86] Compile        : avos <= stream_alloc.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86] Compile        : avos <= stream_buffer.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86] Compile        : avos <= mpeg2.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86] Compile        : avos <= wmv.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86] Compile        : avos <= i18n.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86] Compile        : avos <= realvideo.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86] Compile        : avos <= pts_reorder.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86] Compile        : avos <= stream_config.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86] Compile        : avos <= mpg4.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86] Compile        : avos <= hevc.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86] Compile        : avos <= stream_io_fd.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86] Compile        : avos <= dts.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86] Compile        : avos <= stream.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86] Compile        : avos <= downmix.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86] Compile        : avos <= codec_textsub.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86] Compile        : avos <= codec_yuv.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86] Compile        : avos <= stream_io_file.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86] Compile        : avos <= h264.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86] Compile        : avos <= codec_ssa.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86] Compile        : avos <= codec_vobsub.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86] Compile        : avos <= vobsub.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86] Compile        : avos <= stream_parser.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86] Compile        : avos <= codec_lavc_async.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86] Compile        : avos <= codec_ffsub.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86] Compile        : avos <= codec_ffmpeg_video.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86] Compile        : avos <= codec_utils.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86] Compile        : avos <= OMX_utils.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86] Compile        : avos <= stream_sink_audio.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86] Compile        : avos <= codec_ffmpeg_audio.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86] Compile        : avos <= stream_audio.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86] Compile        : avos <= stream_sink_video.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86] Compile        : avos <= stream_sink_video_sim2.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86] Compile        : avos <= stream_sink_audio_fake.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86] Compile        : avos <= stream_resizer_dss.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86] Compile        : avos <= stream_sync.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86] Compile        : avos <= stream_sink_video_fake.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86] Compile        : avos <= codec_sfdec.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86] Compile        : avos <= codec_mediacodec_audio.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86] Compile        : avos <= codec_OMX.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86] Compile        : avos <= stream_subtitle.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86] Compile        : avos <= stream_sink_video_android2.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86] Compile        : avos <= subtitle_sub.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86] Compile        : avos <= subtitle_mpl2.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86] Compile        : avos <= subtitle_idx.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86] Compile        : avos <= stream_sink_video_android.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86] Compile        : avos <= subtitle_srt.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86] Compile        : avos <= stream_sub_ext.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86] Compile        : avos <= subtitle_ssa.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86] Compile        : avos <= subtitle_vtt.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86] Compile        : avos <= stream_sink_video_android3.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86] Compile        : avos <= stream_parser_ffmpeg.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86] Compile        : avos <= mp3.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86] Compile        : avos <= subtitle_formats.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86] Compile        : avos <= stream_filter_audio_jni.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86] Compile        : avos <= stream_filter_audio_compress.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86] Compile        : avos <= pcm_autogain.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86] Compile        : avos <= stream_filter_audio_sonic.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86] Compile        : avos <= subtitle_smi.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86] Compile        : avos <= stream_filter_audio_ac3.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86] Compile        : avos <= stream_video.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86] Compile        : avos <= id3tag.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86] Compile        : avos <= avos_common.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86] Compile        : avos <= avos_mp_audio.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86] Compile        : avos <= audio_interface_null.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86] Compile        : avos <= log_android.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86] Compile        : avos <= android_config.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86] Compile        : avos <= avos_mp_video.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86] Compile        : avos <= android_codecs.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86] Compile        : avos <= audio_interface.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86] Compile        : avos <= avos_mr.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86] Compile        : avos <= audio_interface_audiotrack.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86] Compile        : sfdec <= sfdec.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86] Compile        : sfdec <= dec_audio.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86] Compile        : avos <= audio_interface_audiotrack_new.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86] Compile        : avos <= audio_interface_opensles.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86] Compile        : avos_android <= android_window.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86] Compile        : avos <= avos_mp.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86] Compile        : deinterlace <= deinterlace.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+jni/../external/libdeinterlace/deinterlace.c:176:20: warning: expression result unused [-Wunused-value]
+  175 |                    + abs(src1[4]-src2[6])
+      |                    ~~~~~~~~~~~~~~~~~~~~~~
+  176 |                    + abs(src1[5]-src2[7]);
+      |                    ^ ~~~~~~~~~~~~~~~~~~~~
+1 warning generated.
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86] Compile        : avos_android <= android_buffer.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86] Install        : libnvpnativehelper.so => libs/x86/libnvpnativehelper.so
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86] Compile        : avos <= stream_filter_audio_atempo.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86] Compile        : cputest <= cputest_jni.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86] Compile        : avos <= sonic.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86] Compile        : cpufeatures <= cpu-features.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86] Compile        : avosjni <= libavos.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86] Compile++      : sfdec.core.21 <= sfdec_common.cpp
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86] Compile        : avosjni <= avos_media_metadata_retriever.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86] Compile        : avos <= audio_spdif.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[arm64-v8a] Compile        : audiocompress <= compress.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[arm64-v8a] Compile        : avos <= atime.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86] Compile++      : sfdec.core.21 <= codec_audio_mediacodec.cpp
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86] Compile        : avos <= codec_sfdec2.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[arm64-v8a] Compile        : avos <= athread.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[arm64-v8a] Compile        : avos <= libavos.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[arm64-v8a] Compile        : avos <= cbe.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[arm64-v8a] Compile        : avos <= bits.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86] Compile++      : sfdec.core.21 <= sfdec_ndkmediacodec.cpp
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86] Compile        : avosjni <= avos_media_player.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[arm64-v8a] Compile        : avos <= fb_dummy.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[arm64-v8a] Compile        : avos <= iso639.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[arm64-v8a] Compile        : avos <= serial.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[arm64-v8a] Compile        : avos <= iso3166.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[arm64-v8a] Compile        : avos <= debug.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[arm64-v8a] Compile        : avos <= util.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[arm64-v8a] Compile        : avos <= bmp.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[arm64-v8a] Compile        : avos <= awchar.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[arm64-v8a] Compile        : avos <= av_dump.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[arm64-v8a] Compile        : avos <= image_resize.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[arm64-v8a] Compile        : avos <= frame_q.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[arm64-v8a] Compile        : avos <= file_type.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[arm64-v8a] Compile        : avos <= file.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[arm64-v8a] Compile        : avos <= image.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[arm64-v8a] Compile        : avos <= av.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[arm64-v8a] Compile        : avos <= rect.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[arm64-v8a] Compile        : avos <= object.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86] Compile        : avos <= audio_interface_audiotrack_java.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[arm64-v8a] Compile        : avos <= sysfs_ll.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[arm64-v8a] Compile        : avos <= ac_av.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[arm64-v8a] Compile        : avos <= thumb_storage.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[arm64-v8a] Compile        : avos <= mainloop.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[arm64-v8a] Compile        : avos <= linked_list.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[arm64-v8a] Compile        : avos <= thumb_stream.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[arm64-v8a] Compile        : avos <= file_info.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[arm64-v8a] Compile        : avos <= threadcom.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[arm64-v8a] Compile        : avos <= device_config.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[arm64-v8a] Compile        : avos <= pixel_utils.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[arm64-v8a] Compile        : avos <= avos_lifetime.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[arm64-v8a] Compile        : avos <= stream_oem.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[arm64-v8a] Compile        : avos <= dataevent.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[arm64-v8a] Compile        : avos <= timers.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[arm64-v8a] Compile        : avos <= xdm_utils.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[arm64-v8a] Compile        : avos <= stream_buffer_cooked.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[arm64-v8a] Compile        : avos <= stream_global.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[arm64-v8a] Compile        : avos <= browse.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[arm64-v8a] Compile        : avos <= stream_buffer.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[arm64-v8a] Compile        : avos <= stream_queue.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[arm64-v8a] Compile        : avos <= stream_dumper.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[arm64-v8a] Compile        : avos <= stream_alloc.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[arm64-v8a] Compile        : avos <= stream_buffer_raw.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[arm64-v8a] Compile        : avos <= realvideo.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[arm64-v8a] Compile        : avos <= wmv.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[arm64-v8a] Compile        : avos <= mpg4.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[arm64-v8a] Compile        : avos <= stream_config.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[arm64-v8a] Compile        : avos <= mpeg2.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[arm64-v8a] Compile        : avos <= pts_reorder.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[arm64-v8a] Compile        : avos <= stream.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[arm64-v8a] Compile        : avos <= hevc.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[arm64-v8a] Compile        : avos <= downmix.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[arm64-v8a] Compile        : avos <= h264.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[arm64-v8a] Compile        : avos <= dts.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[arm64-v8a] Compile        : avos <= stream_io_file.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[arm64-v8a] Compile        : avos <= codec_yuv.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[arm64-v8a] Compile        : avos <= i18n.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[arm64-v8a] Compile        : avos <= stream_io_fd.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[arm64-v8a] Compile        : avos <= codec_textsub.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[arm64-v8a] Compile        : avos <= codec_vobsub.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[arm64-v8a] Compile        : avos <= codec_ssa.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[arm64-v8a] Compile        : avos <= stream_sync.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[arm64-v8a] Compile        : avos <= vobsub.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[arm64-v8a] Compile        : avos <= stream_parser.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[arm64-v8a] Compile        : avos <= codec_utils.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[arm64-v8a] Compile        : avos <= OMX_utils.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[arm64-v8a] Compile        : avos <= codec_ffmpeg_video.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[arm64-v8a] Compile        : avos <= codec_lavc_async.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[arm64-v8a] Compile        : avos <= codec_ffsub.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[arm64-v8a] Compile        : avos <= stream_sink_video_sim2.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[arm64-v8a] Compile        : avos <= stream_sink_audio.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[arm64-v8a] Compile        : avos <= stream_sink_video.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[arm64-v8a] Compile        : avos <= codec_sfdec.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[arm64-v8a] Compile        : avos <= codec_OMX.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[arm64-v8a] Compile        : avos <= codec_mediacodec_audio.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[arm64-v8a] Compile        : avos <= stream_sink_video_fake.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[arm64-v8a] Compile        : avos <= stream_video.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[arm64-v8a] Compile        : avos <= codec_ffmpeg_audio.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[arm64-v8a] Compile        : avos <= stream_sink_audio_fake.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[arm64-v8a] Compile        : avos <= stream_resizer_dss.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[arm64-v8a] Compile        : avos <= stream_audio.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[arm64-v8a] Compile        : avos <= stream_sub_ext.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[arm64-v8a] Compile        : avos <= stream_subtitle.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[arm64-v8a] Compile        : avos <= subtitle_ssa.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[arm64-v8a] Compile        : avos <= subtitle_sub.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[arm64-v8a] Compile        : avos <= subtitle_srt.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[arm64-v8a] Compile        : avos <= stream_sink_video_android2.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[arm64-v8a] Compile        : avos <= stream_sink_video_android.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[arm64-v8a] Compile        : avos <= stream_sink_video_android3.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[arm64-v8a] Compile        : avos <= subtitle_mpl2.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[arm64-v8a] Compile        : avos <= subtitle_vtt.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[arm64-v8a] Compile        : avos <= subtitle_formats.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[arm64-v8a] Compile        : avos <= mp3.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[arm64-v8a] Compile        : avos <= subtitle_smi.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[arm64-v8a] Compile        : avos <= stream_filter_audio_compress.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[arm64-v8a] Compile        : avos <= pcm_autogain.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[arm64-v8a] Compile        : avos <= subtitle_idx.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[arm64-v8a] Compile        : avos <= stream_filter_audio_jni.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[arm64-v8a] Compile        : avos <= id3tag.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[arm64-v8a] Compile        : avos <= avos_mp_audio.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[arm64-v8a] Compile        : avos <= avos_common.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[arm64-v8a] Compile        : avos <= stream_parser_ffmpeg.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[arm64-v8a] Compile        : avos <= android_config.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[arm64-v8a] Compile        : avos <= stream_filter_audio_sonic.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[arm64-v8a] Compile        : avos <= avos_mp_video.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[arm64-v8a] Compile        : avos <= android_codecs.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[arm64-v8a] Compile        : avos <= log_android.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[arm64-v8a] Compile        : avos <= audio_interface_null.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[arm64-v8a] Compile        : avos <= stream_filter_audio_ac3.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[arm64-v8a] Compile        : avos <= avos_mp.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[arm64-v8a] Compile        : avos <= audio_interface.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[arm64-v8a] Compile        : avos <= avos_mr.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[arm64-v8a] Compile        : avos <= audio_interface_audiotrack.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[arm64-v8a] Compile        : sfdec <= dec_audio.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[arm64-v8a] Compile        : sfdec <= sfdec.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[arm64-v8a] Compile        : avos <= audio_interface_opensles.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[arm64-v8a] Compile        : avos_android <= android_window.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[arm64-v8a] Compile        : avos <= audio_interface_audiotrack_new.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[arm64-v8a] Compile        : cputest <= cputest_jni.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[arm64-v8a] Compile        : avos <= stream_filter_audio_atempo.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[arm64-v8a] Install        : libnvpnativehelper.so => libs/arm64-v8a/libnvpnativehelper.so
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[arm64-v8a] Compile        : avos_android <= android_buffer.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[arm64-v8a] Compile        : avosjni <= libavos.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[arm64-v8a] Compile        : cpufeatures <= cpu-features.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[arm64-v8a] Compile        : avos <= audio_spdif.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[arm64-v8a] Compile        : avos <= sonic.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[arm64-v8a] Compile++      : sfdec.core.21 <= sfdec_common.cpp
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86_64] Compile        : avos <= atime.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[arm64-v8a] Compile        : avos <= audio_interface_audiotrack_java.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[arm64-v8a] Compile++      : sfdec.core.21 <= codec_audio_mediacodec.cpp
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86_64] Compile        : audiocompress <= compress.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[arm64-v8a] Compile        : avosjni <= avos_media_metadata_retriever.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86_64] Compile        : avos <= athread.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86_64] Compile        : avos <= libavos.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+jni/../external/libdeinterlace/deinterlace.c:176:20: warning: expression result unused [-Wunused-value]
+  175 |                    + abs(src1[4]-src2[6])
+      |                    ~~~~~~~~~~~~~~~~~~~~~~
+  176 |                    + abs(src1[5]-src2[7]);
+      |                    ^ ~~~~~~~~~~~~~~~~~~~~
+1 warning generated.
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[arm64-v8a] Compile        : deinterlace <= deinterlace.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86_64] Compile        : avos <= iso639.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86_64] Compile        : avos <= serial.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86_64] Compile        : avos <= bits.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[arm64-v8a] Compile        : avosjni <= avos_media_player.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86_64] Compile        : avos <= iso3166.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[arm64-v8a] Compile++      : sfdec.core.21 <= sfdec_ndkmediacodec.cpp
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86_64] Compile        : avos <= fb_dummy.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[arm64-v8a] Compile        : avos <= codec_sfdec2.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86_64] Compile        : avos <= debug.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86_64] Compile        : avos <= bmp.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86_64] Compile        : avos <= av_dump.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86_64] Compile        : avos <= cbe.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86_64] Compile        : avos <= awchar.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86_64] Compile        : avos <= file.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86_64] Compile        : avos <= image.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86_64] Compile        : avos <= rect.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86_64] Compile        : avos <= util.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86_64] Compile        : avos <= frame_q.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86_64] Compile        : avos <= image_resize.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86_64] Compile        : avos <= file_type.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86_64] Compile        : avos <= object.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86_64] Compile        : avos <= linked_list.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86_64] Compile        : avos <= av.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86_64] Compile        : avos <= ac_av.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86_64] Compile        : avos <= mainloop.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86_64] Compile        : avos <= sysfs_ll.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86_64] Compile        : avos <= file_info.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86_64] Compile        : avos <= thumb_stream.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86_64] Compile        : avos <= thumb_storage.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86_64] Compile        : avos <= dataevent.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86_64] Compile        : avos <= threadcom.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86_64] Compile        : avos <= avos_lifetime.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86_64] Compile        : avos <= timers.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86_64] Compile        : avos <= device_config.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86_64] Compile        : avos <= stream_oem.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86_64] Compile        : avos <= pixel_utils.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86_64] Compile        : avos <= xdm_utils.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86_64] Compile        : avos <= stream_queue.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86_64] Compile        : avos <= browse.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86_64] Compile        : avos <= stream_global.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86_64] Compile        : avos <= stream_buffer_cooked.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86_64] Compile        : avos <= stream_buffer_raw.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86_64] Compile        : avos <= stream_dumper.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86_64] Compile        : avos <= stream_buffer.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86_64] Compile        : avos <= mpeg2.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86_64] Compile        : avos <= stream_alloc.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86_64] Compile        : avos <= stream_config.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86_64] Compile        : avos <= wmv.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86_64] Compile        : avos <= realvideo.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86_64] Compile        : avos <= downmix.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86_64] Compile        : avos <= mpg4.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86_64] Compile        : avos <= pts_reorder.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86_64] Compile        : avos <= i18n.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86_64] Compile        : avos <= dts.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86_64] Compile        : avos <= hevc.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86_64] Compile        : avos <= codec_yuv.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86_64] Compile        : avos <= stream_io_fd.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86_64] Compile        : avos <= codec_textsub.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86_64] Compile        : avos <= codec_vobsub.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86_64] Compile        : avos <= stream_io_file.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86_64] Compile        : avos <= codec_ssa.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86_64] Compile        : avos <= vobsub.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86_64] Compile        : avos <= h264.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86_64] Compile        : avos <= stream.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86_64] Compile        : avos <= stream_parser.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86_64] Compile        : avos <= codec_lavc_async.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86_64] Compile        : avos <= codec_ffsub.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86_64] Compile        : avos <= codec_ffmpeg_audio.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86_64] Compile        : avos <= OMX_utils.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86_64] Compile        : avos <= codec_utils.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86_64] Compile        : avos <= stream_sink_audio.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86_64] Compile        : avos <= stream_sink_video.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86_64] Compile        : avos <= codec_ffmpeg_video.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86_64] Compile        : avos <= stream_sink_audio_fake.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86_64] Compile        : avos <= codec_mediacodec_audio.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86_64] Compile        : avos <= stream_sink_video_sim2.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86_64] Compile        : avos <= stream_sink_video_fake.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86_64] Compile        : avos <= codec_OMX.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86_64] Compile        : avos <= codec_sfdec.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86_64] Compile        : avos <= stream_resizer_dss.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86_64] Compile        : avos <= stream_sync.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86_64] Compile        : avos <= stream_audio.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86_64] Compile        : avos <= stream_sink_video_android3.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86_64] Compile        : avos <= subtitle_ssa.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86_64] Compile        : avos <= stream_parser_ffmpeg.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86_64] Compile        : avos <= stream_sub_ext.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86_64] Compile        : avos <= stream_subtitle.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86_64] Compile        : avos <= subtitle_srt.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86_64] Compile        : avos <= subtitle_sub.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86_64] Compile        : avos <= subtitle_mpl2.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86_64] Compile        : avos <= stream_video.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86_64] Compile        : avos <= mp3.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86_64] Compile        : avos <= subtitle_formats.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86_64] Compile        : avos <= pcm_autogain.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86_64] Compile        : avos <= stream_filter_audio_compress.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86_64] Compile        : avos <= stream_sink_video_android2.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86_64] Compile        : avos <= stream_sink_video_android.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86_64] Compile        : avos <= subtitle_idx.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86_64] Compile        : avos <= subtitle_vtt.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86_64] Compile        : avos <= stream_filter_audio_jni.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86_64] Compile        : avos <= avos_common.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86_64] Compile        : avos <= android_config.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86_64] Compile        : avos <= stream_filter_audio_sonic.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86_64] Compile        : avos <= subtitle_smi.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86_64] Compile        : avos <= avos_mp_audio.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86_64] Compile        : avos <= log_android.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86_64] Compile        : avos <= avos_mp_video.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86_64] Compile        : avos <= stream_filter_audio_ac3.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86_64] Compile        : avos <= id3tag.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86_64] Compile        : avos <= audio_interface_null.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86_64] Compile        : avos <= audio_interface.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86_64] Compile        : avos <= android_codecs.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86_64] Compile        : avos <= audio_interface_opensles.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86_64] Compile        : sfdec <= sfdec.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86_64] Compile        : avos <= avos_mp.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86_64] Compile        : sfdec <= dec_audio.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86_64] Compile        : avos <= audio_interface_audiotrack.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86_64] Compile        : avos <= sonic.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86_64] Compile        : avos <= stream_filter_audio_atempo.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86_64] Compile        : avos_android <= android_window.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86_64] Compile        : cpufeatures <= cpu-features.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86_64] Install        : libnvpnativehelper.so => libs/x86_64/libnvpnativehelper.so
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86_64] Compile        : avos <= avos_mr.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86_64] Compile        : avos <= audio_interface_audiotrack_new.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86_64] Compile        : cputest <= cputest_jni.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86_64] Compile++      : sfdec.core.21 <= sfdec_common.cpp
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86_64] Compile        : deinterlace <= deinterlace.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+jni/../external/libdeinterlace/deinterlace.c:176:20: warning: expression result unused [-Wunused-value]
+  175 |                    + abs(src1[4]-src2[6])
+      |                    ~~~~~~~~~~~~~~~~~~~~~~
+  176 |                    + abs(src1[5]-src2[7]);
+      |                    ^ ~~~~~~~~~~~~~~~~~~~~
+1 warning generated.
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[armeabi-v7a] SharedLibrary  : libaudiocompress.so
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86_64] Compile        : avos <= codec_sfdec2.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86_64] Compile        : avos_android <= android_buffer.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86_64] Compile        : avosjni <= libavos.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86_64] Compile++      : sfdec.core.21 <= codec_audio_mediacodec.cpp
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[armeabi-v7a] SharedLibrary  : libsfdec.so
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[armeabi-v7a] SharedLibrary  : libdeinterlace.so
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[armeabi-v7a] SharedLibrary  : libavos_android.so
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86_64] Compile        : avosjni <= avos_media_metadata_retriever.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86] SharedLibrary  : libsfdec.so
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86] SharedLibrary  : libdeinterlace.so
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[armeabi-v7a] SharedLibrary  : libsfdec.core.21.so
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86] SharedLibrary  : libaudiocompress.so
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86_64] Compile        : avos <= audio_spdif.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86_64] Compile        : avosjni <= avos_media_player.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86] SharedLibrary  : libavos_android.so
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86_64] Compile++      : sfdec.core.21 <= sfdec_ndkmediacodec.cpp
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[arm64-v8a] SharedLibrary  : libaudiocompress.so
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[arm64-v8a] SharedLibrary  : libsfdec.so
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[arm64-v8a] SharedLibrary  : libdeinterlace.so
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86] SharedLibrary  : libsfdec.core.21.so
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86_64] SharedLibrary  : libaudiocompress.so
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86_64] SharedLibrary  : libsfdec.so
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[armeabi-v7a] Install        : libavos_android.so => libs/armeabi-v7a/libavos_android.so
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86_64] SharedLibrary  : libdeinterlace.so
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[arm64-v8a] SharedLibrary  : libavos_android.so
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[armeabi-v7a] Install        : libaudiocompress.so => libs/armeabi-v7a/libaudiocompress.so
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[armeabi-v7a] Install        : libdeinterlace.so => libs/armeabi-v7a/libdeinterlace.so
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[armeabi-v7a] Install        : libsfdec.so => libs/armeabi-v7a/libsfdec.so
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[armeabi-v7a] Install        : libsfdec.core.21.so => libs/armeabi-v7a/libsfdec.core.21.so
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86] Install        : libaudiocompress.so => libs/x86/libaudiocompress.so
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[arm64-v8a] SharedLibrary  : libsfdec.core.21.so
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86] Install        : libavos_android.so => libs/x86/libavos_android.so
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86] Install        : libdeinterlace.so => libs/x86/libdeinterlace.so
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86] Install        : libsfdec.so => libs/x86/libsfdec.so
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86] Install        : libsfdec.core.21.so => libs/x86/libsfdec.core.21.so
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[arm64-v8a] Install        : libaudiocompress.so => libs/arm64-v8a/libaudiocompress.so
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[arm64-v8a] Install        : libavos_android.so => libs/arm64-v8a/libavos_android.so
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[arm64-v8a] Install        : libdeinterlace.so => libs/arm64-v8a/libdeinterlace.so
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[arm64-v8a] Install        : libsfdec.so => libs/arm64-v8a/libsfdec.so
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86_64] SharedLibrary  : libavos_android.so
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[arm64-v8a] Install        : libsfdec.core.21.so => libs/arm64-v8a/libsfdec.core.21.so
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86_64] Install        : libaudiocompress.so => libs/x86_64/libaudiocompress.so
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86_64] Install        : libdeinterlace.so => libs/x86_64/libdeinterlace.so
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86_64] Install        : libsfdec.so => libs/x86_64/libsfdec.so
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86_64] Install        : libavos_android.so => libs/x86_64/libavos_android.so
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86_64] SharedLibrary  : libsfdec.core.21.so
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86_64] Install        : libsfdec.core.21.so => libs/x86_64/libsfdec.core.21.so
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86_64] Compile        : avos <= audio_interface_audiotrack_java.c
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[armeabi-v7a] StaticLibrary  : libcpufeatures.a
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86] StaticLibrary  : libcpufeatures.a
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[arm64-v8a] StaticLibrary  : libcpufeatures.a
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86_64] StaticLibrary  : libcpufeatures.a
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[armeabi-v7a] SharedLibrary  : libcputest.so
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86] SharedLibrary  : libcputest.so
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[armeabi-v7a] Install        : libcputest.so => libs/armeabi-v7a/libcputest.so
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[arm64-v8a] SharedLibrary  : libcputest.so
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86] Install        : libcputest.so => libs/x86/libcputest.so
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86_64] SharedLibrary  : libcputest.so
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[arm64-v8a] Install        : libcputest.so => libs/arm64-v8a/libcputest.so
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86_64] Install        : libcputest.so => libs/x86_64/libcputest.so
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86] SharedLibrary  : libavos.so
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[armeabi-v7a] SharedLibrary  : libavos.so
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[arm64-v8a] SharedLibrary  : libavos.so
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86] Install        : libavos.so => libs/x86/libavos.so
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86_64] SharedLibrary  : libavos.so
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[armeabi-v7a] Install        : libavos.so => libs/armeabi-v7a/libavos.so
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86] SharedLibrary  : libavosjni.so
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[arm64-v8a] Install        : libavos.so => libs/arm64-v8a/libavos.so
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86] Install        : libavosjni.so => libs/x86/libavosjni.so
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86_64] Install        : libavos.so => libs/x86_64/libavos.so
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[armeabi-v7a] SharedLibrary  : libavosjni.so
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[arm64-v8a] SharedLibrary  : libavosjni.so
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[armeabi-v7a] Install        : libavosjni.so => libs/armeabi-v7a/libavosjni.so
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86_64] SharedLibrary  : libavosjni.so
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[arm64-v8a] Install        : libavosjni.so => libs/arm64-v8a/libavosjni.so
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[2]: Entering directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+[x86_64] Install        : libavosjni.so => libs/x86_64/libavosjni.so
+make[2]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova/native/avos'
+make[1]: Leaving directory '/home/runner/work/aos-AVP/aos-AVP/nova'
+torrentd prebuilt exists, skipping boost
+torrentd prebuilt exists, skipping libtorrent
+torrentd already built, skipping
+rm -f MediaLib/libs/armeabi/libtorrentd.so ;\
+for i in armeabi-v7a arm64-v8a x86 x86_64;do \
+	mkdir -p MediaLib/libs/$i ;\
+	cp native/prebuilt/torrentd/libs/$i/torrentd MediaLib/libs/$i/libtorrentd.so ;\
+done
+
+> Task :MediaLib:preBuild
+> Task :MediaLib:preReleaseBuild
+> Task :generateNoamazonReleaseBuildConfig
+> Task :generateNoamazonReleaseResValues
+> Task :generateNoamazonReleaseResources
+> Task :MediaLib:compileReleaseAidl
+> Task :packageNoamazonReleaseResources
+> Task :FileCoreLibrary:processReleaseNavigationResources
+> Task :MediaLib:processReleaseNavigationResources
+> Task :compileNoamazonReleaseAidl
+> Task :processNoamazonReleaseNavigationResources
+> Task :FileCoreLibrary:generateReleaseResources
+> Task :FileCoreLibrary:packageReleaseResources
+> Task :MediaLib:generateReleaseResources
+> Task :FileCoreLibrary:parseReleaseLocalResources
+> Task :parseNoamazonReleaseLocalResources
+> Task :MediaLib:packageReleaseResources
+> Task :MediaLib:javaPreCompileRelease
+> Task :FileCoreLibrary:javaPreCompileRelease
+> Task :javaPreCompileNoamazonRelease
+> Task :extractProguardFiles
+> Task :extractDeepLinksNoamazonRelease
+> Task :FileCoreLibrary:extractDeepLinksRelease
+> Task :MediaLib:extractDeepLinksRelease
+> Task :MediaLib:parseReleaseLocalResources
+> Task :FileCoreLibrary:extractProguardFiles
+> Task :FileCoreLibrary:prepareLintJarForPublish
+> Task :MediaLib:extractProguardFiles
+> Task :MediaLib:prepareLintJarForPublish
+> Task :FileCoreLibrary:generateReleaseRFile
+
+> Task :FileCoreLibrary:processReleaseManifest
+package="com.archos.filecorelibrary" found in source AndroidManifest.xml: /home/runner/work/aos-AVP/aos-AVP/nova/FileCoreLibrary/AndroidManifest.xml.
+Setting the namespace via the package attribute in the source AndroidManifest.xml is no longer supported, and the value is ignored.
+Recommendation: remove package="com.archos.filecorelibrary" from the source AndroidManifest.xml: /home/runner/work/aos-AVP/aos-AVP/nova/FileCoreLibrary/AndroidManifest.xml.
+
+> Task :MediaLib:processReleaseManifest
+package="com.archos.medialib" found in source AndroidManifest.xml: /home/runner/work/aos-AVP/aos-AVP/nova/MediaLib/AndroidManifest.xml.
+Setting the namespace via the package attribute in the source AndroidManifest.xml is no longer supported, and the value is ignored.
+Recommendation: remove package="com.archos.medialib" from the source AndroidManifest.xml: /home/runner/work/aos-AVP/aos-AVP/nova/MediaLib/AndroidManifest.xml.
+
+> Task :FileCoreLibrary:writeReleaseAarMetadata
+> Task :FileCoreLibrary:compileReleaseKotlin NO-SOURCE
+> Task :MediaLib:generateReleaseRFile
+> Task :FileCoreLibrary:compileReleaseJavaWithJavac
+> Task :FileCoreLibrary:bundleLibCompileToJarRelease
+> Task :generateNoamazonReleaseRFile
+> Task :processNoamazonReleaseMainManifest
+> Task :MediaLib:compileReleaseKotlin NO-SOURCE
+> Task :MediaLib:compileReleaseJavaWithJavac
+> Task :FileCoreLibrary:bundleLibRuntimeToJarRelease
+> Task :MediaLib:bundleLibCompileToJarRelease
+> Task :FileCoreLibrary:processReleaseJavaRes
+> Task :compileNoamazonReleaseKotlin NO-SOURCE
+> Task :compileNoamazonReleaseJavaWithJavac
+> Task :FileCoreLibrary:createFullJarRelease
+> Task :FileCoreLibrary:generateReleaseLintModel
+> Task :MediaLib:processReleaseJavaRes
+> Task :MediaLib:bundleLibRuntimeToJarRelease
+> Task :MediaLib:generateReleaseLintModel
+> Task :MediaLib:createFullJarRelease
+> Task :generateNoamazonReleaseLintReportModel
+> Task :MediaLib:extractDeepLinksForAarRelease
+> Task :MediaLib:checkReleaseAarMetadata
+> Task :MediaLib:extractReleaseAnnotations
+> Task :MediaLib:generateReleaseAssets UP-TO-DATE
+> Task :MediaLib:mergeReleaseAssets
+> Task :MediaLib:mergeReleaseGeneratedProguardFiles
+> Task :MediaLib:mergeReleaseConsumerProguardFiles
+> Task :MediaLib:prepareReleaseArtProfile
+> Task :MediaLib:writeReleaseAarMetadata
+> Task :FileCoreLibrary:extractDeepLinksForAarRelease
+> Task :FileCoreLibrary:checkReleaseAarMetadata
+> Task :FileCoreLibrary:extractReleaseAnnotations
+> Task :FileCoreLibrary:generateReleaseAssets UP-TO-DATE
+> Task :FileCoreLibrary:mergeReleaseAssets
+> Task :FileCoreLibrary:mergeReleaseGeneratedProguardFiles
+> Task :FileCoreLibrary:mergeReleaseConsumerProguardFiles
+> Task :FileCoreLibrary:prepareReleaseArtProfile
+> Task :FileCoreLibrary:mergeReleaseJavaResource
+> Task :MediaLib:mergeReleaseJavaResource
+> Task :FileCoreLibrary:syncReleaseLibJars
+> Task :MediaLib:syncReleaseLibJars
+> Task :MediaLib:bundleReleaseLocalLintAar
+> Task :FileCoreLibrary:bundleReleaseLocalLintAar
+> Task :FileCoreLibrary:writeReleaseLintModelMetadata
+> Task :MediaLib:writeReleaseLintModelMetadata
+> Task :mergeNoamazonReleaseJniLibFolders
+> Task :FileCoreLibrary:mergeReleaseJniLibFolders
+> Task :FileCoreLibrary:mergeReleaseNativeLibs
+> Task :MediaLib:mergeReleaseJniLibFolders
+> Task :FileCoreLibrary:copyReleaseJniLibsProjectOnly
+> Task :mergeNoamazonReleaseArtProfile
+> Task :MediaLib:exportReleaseConsumerProguardFiles
+> Task :MediaLib:mergeReleaseNativeLibs
+> Task :FileCoreLibrary:exportReleaseConsumerProguardFiles
+> Task :expandNoamazonReleaseL8ArtProfileWildcards
+> Task :MediaLib:copyReleaseJniLibsProjectOnly
+> Task :checkNoamazonReleaseDuplicateClasses
+> Task :checkNoamazonReleaseAarMetadata
+> Task :mapNoamazonReleaseSourceSetPaths
+> Task :compileNoamazonReleaseNavigationResources
+> Task :mergeNoamazonReleaseNativeLibs
+> Task :createNoamazonReleaseCompatibleScreenManifests
+> Task :processNoamazonReleaseManifest
+> Task :processNoamazonReleaseManifestForPackage
+> Task :FileCoreLibrary:mapReleaseSourceSetPaths
+> Task :FileCoreLibrary:compileReleaseLibraryResources
+> Task :MediaLib:mapReleaseSourceSetPaths
+> Task :mergeNoamazonReleaseResources
+> Task :MediaLib:compileReleaseLibraryResources
+> Task :processNoamazonReleaseJavaRes
+
+> Task :stripNoamazonReleaseDebugSymbols
+Unable to strip the following libraries, packaging them as they are: libaudiocompress.so, libavcodec.so, libavfilter.so, libavformat.so, libavos.so, libavos_android.so, libavosjni.so, libavutil.so, libcputest.so, libdav1d.so, libdeinterlace.so, libfilecoreutils.so, libmysofa.so, libnvpnativehelper.so, libopus.so, libsentry-android.so, libsentry.so, libsfdec.core.21.so, libsfdec.so, libswresample.so, libswscale.so, libtorrentd.so. Run with --info option to learn more.
+
+> Task :extractNoamazonReleaseNativeSymbolTables
+> Task :mergeNoamazonReleaseNativeDebugMetadata NO-SOURCE
+> Task :mergeNoamazonReleaseStartupProfile
+> Task :generateNoamazonReleaseAssets UP-TO-DATE
+> Task :mergeNoamazonReleaseAssets
+> Task :compressNoamazonReleaseAssets
+> Task :extractNoamazonReleaseVersionControlInfo
+> Task :collectNoamazonReleaseDependencies
+> Task :sdkNoamazonReleaseDependencyData
+> Task :validateSigningNoamazonRelease
+> Task :writeNoamazonReleaseAppMetadata
+> Task :writeNoamazonReleaseSigningConfigVersions
+> Task :mergeNoamazonReleaseJavaResource
+> Task :processNoamazonReleaseResources
+> Task :mergeNoamazonReleaseGeneratedProguardFiles
+> Task :expandNoamazonReleaseArtProfileWildcards
+> Task :FileCoreLibrary:lintAnalyzeRelease
+> Task :minifyNoamazonReleaseWithR8
+> Task :MediaLib:lintAnalyzeRelease
+> Task :lintAnalyzeNoamazonRelease
+
+> Task :lintReportNoamazonRelease
+Wrote HTML report to file:///home/runner/work/aos-AVP/aos-AVP/nova/Video/build/reports/lint-results-noamazonRelease.html
+Wrote SARIF report to file:///home/runner/work/aos-AVP/aos-AVP/nova/Video/build/reports/lint-results-noamazonRelease.sarif
+
+> Task :lintNoamazonRelease
+> Task :convertShrunkResourcesToBinaryNoamazonRelease
+> Task :optimizeNoamazonReleaseResources
+> Task :l8DexDesugarLibNoamazonRelease
+> Task :compileNoamazonReleaseArtProfile
+> Task :packageNoamazonRelease
+> Task :createNoamazonReleaseApkListingFileRedirect
+
+> Task :assembleNoamazonRelease
+generated: org.courville.nova.smbfix-2672629-6.5.5-20261015.2231-armeabi-v7a-release.apk (6.5.5-20261015.2231, 2672629)
+generated: org.courville.nova.smbfix-2672629-6.5.5-20261015.2231-x86_64-release.apk (6.5.5-20261015.2231, 2672629)
+generated: org.courville.nova.smbfix-2672629-6.5.5-20261015.2231-x86-release.apk (6.5.5-20261015.2231, 2672629)
+generated: org.courville.nova.smbfix-2672629-6.5.5-20261015.2231-arm64-v8a-release.apk (6.5.5-20261015.2231, 2672629)
+
+BUILD SUCCESSFUL in 6m 47s
+126 actionable tasks: 126 executed
+Consider enabling configuration cache to speed up this build: https://docs.gradle.org/9.5.0/userguide/configuration_cache_enabling.html

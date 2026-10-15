@@ -1,0 +1,9 @@
+commit: 3e65e2b4ba1c307f226ba25ece10fe7c4e743637
+sync: success
+patch: success
+build: success
+--- apks ---
+-rw-r--r-- 1 runner runner 29606862 Oct 15 22:37 nova/Video/build/outputs/apk/noamazon/release/org.courville.nova.smbfix-2672629-6.5.5-20261015.2231-armeabi-v7a-release.apk
+-rw-r--r-- 1 runner runner 32475940 Oct 15 22:37 nova/Video/build/outputs/apk/noamazon/release/org.courville.nova.smbfix-2672629-6.5.5-20261015.2231-arm64-v8a-release.apk
+-rw-r--r-- 1 runner runner 31987456 Oct 15 22:37 nova/Video/build/outputs/apk/noamazon/release/org.courville.nova.smbfix-2672629-6.5.5-20261015.2231-x86-release.apk
+-rw-r--r-- 1 runner runner 33217728 Oct 15 22:37 nova/Video/build/outputs/apk/noamazon/release/org.courville.nova.smbfix-2672629-6.5.5-20261015.2231-x86_64-release.apk
