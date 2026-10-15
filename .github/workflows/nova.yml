@@ -49,7 +49,7 @@ jobs:
         repo forall -c 'git checkout -t $REPO_REMOTE/$REPO_RREV'
         echo "--- FileCoreLibrary (debe contener el arreglo SMB) ---"
         git -C FileCoreLibrary log --oneline -2
-        grep -c "connectDirectSmb2" FileCoreLibrary/src/com/archos/filecorelibrary/smbj/SmbjUtils.java
+        grep -q "smbConnectConfigs" FileCoreLibrary/src/com/archos/filecorelibrary/smbj/SmbjUtils.java && echo "arreglo SMB presente"
 
     - name: apply smbfix patches
       id: patch
@@ -84,7 +84,7 @@ jobs:
           echo "--- apks ---"
           find nova/Video/build/outputs/apk -name '*.apk' -exec ls -l {} \; 2>/dev/null || true
         } > "$OUT/STATUS.txt"
-        find nova/Video/build/outputs/apk -name '*.apk' 2>/dev/null | grep -E 'arm64-v8a|armeabi-v7a|universal' | while read -r f; do
+        find nova/Video/build/outputs/apk -name '*.apk' 2>/dev/null | { grep -E 'arm64-v8a|armeabi-v7a|universal' || true; } | while read -r f; do
           size=$(stat -c %s "$f")
           if [ "$size" -lt 99000000 ]; then cp "$f" "$OUT/"; else echo "omitido por tamaño (>99MB): $f" >> "$OUT/STATUS.txt"; fi
         done
