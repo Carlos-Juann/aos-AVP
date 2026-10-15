@@ -49,6 +49,7 @@ replace "$VIDEO/AndroidManifest.xml" 'android:sharedUserId="archos.openmediacent
 # 4b) logs: smbj en DEBUG en el log por defecto (Android/data/<paquete>/files/logback/debug.log)
 replace "$VIDEO/res/raw/logback_full.xml" '<logger name="com.archos.filecorelibrary.smbj" level="INFO"/>' '<logger name="com.archos.filecorelibrary.smbj" level="DEBUG"/>'
 replace "$VIDEO/res/raw/logback_full.xml" '<logger name="com.hierynomus.smbj" level="INFO"/>' '<logger name="com.hierynomus.smbj" level="DEBUG"/>'
+replace "$VIDEO/res/raw/logback_full.xml" '<appender-ref ref="logcat"/>' '<appender-ref ref="logcat"/><appender-ref ref="LOG_FILE"/>' # sin esto nova.log no recibe nada
 
 # 5) firma: el build de release solo firma si existe keystore.properties
 cat > "$VIDEO/keystore.properties" <<EOF
