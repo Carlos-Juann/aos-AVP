@@ -84,11 +84,13 @@ jobs:
           echo "--- apks ---"
           find nova/Video/build/outputs/apk -name '*.apk' -exec ls -l {} \; 2>/dev/null || true
         } > "$OUT/STATUS.txt"
-        APK=$(find nova/Video/build/outputs/apk -name '*arm64-v8a*.apk' 2>/dev/null | head -n 1)
-        if [ -n "$APK" ]; then
-          size=$(stat -c %s "$APK")
-          if [ "$size" -lt 99000000 ]; then cp "$APK" "$OUT/nova-smbfix-arm64-v8a.apk"; else echo "omitido por tamaño (>99MB): $APK" >> "$OUT/STATUS.txt"; fi
-        fi
+        for ABI in arm64-v8a armeabi-v7a; do
+          APK=$(find nova/Video/build/outputs/apk -name "*${ABI}*.apk" 2>/dev/null | head -n 1)
+          if [ -n "$APK" ]; then
+            size=$(stat -c %s "$APK")
+            if [ "$size" -lt 99000000 ]; then cp "$APK" "$OUT/nova-smbfix-${ABI}.apk"; else echo "omitido por tamaño (>99MB): $APK" >> "$OUT/STATUS.txt"; fi
+          fi
+        done
         cd "$OUT"
         git init -q -b ci-logs
         git add -A
